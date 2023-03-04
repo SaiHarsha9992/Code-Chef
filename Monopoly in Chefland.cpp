@@ -1,22 +1,21 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
-	int t ;
+int main()
+{
+    int t ;
 	cin >> t ;
 	while ( t-- )
 	{
-	   int a , b , c ;
-	   cin >> a >> b >> c ;
-	   if ( a > b + c || b > c + a || c > a + b )
-	   {
-	       cout << "Yes" << endl ;
-	   }
-	   else
-	   {
-	       cout << "No" << endl ;
-	   }
+	    int a , b , c ;
+	    cin >> a >> b >> c ;
+	    if ( a > b + c || b > a + c || c > a + b) 
+	    {
+	        cout << "YES" << endl ;
+	    }
+	    else
+	    {
+	        cout << "NO" << endl ;
+	    }
 	}
-	return 0;
 }
